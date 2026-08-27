@@ -1,3 +1,4 @@
+
 header {
     padding-block: 32px;
     font: var(--text-medium);
@@ -7,6 +8,14 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#profile-header img {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: center top;    
 }
 
 #profile-header {
