@@ -49,3 +49,10 @@ a:hover{
 .bg-surface-color{
     background-color: var(--surface-color);
 }
+
+/* Mobile: reduz as margens laterais em telas pequenas */
+@media (max-width: 600px) {
+    .container{
+        padding-inline: 16px;
+    }
+}

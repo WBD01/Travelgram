@@ -1,12 +1,29 @@
 main {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    padding-block: 32px;
 }
 
 main img {
-    width: 390px;
-    height: 390px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 8px;
+    display: block;
+}
+
+/* Tablet: 2 colunas */
+@media (max-width: 1023px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile: 1 coluna */
+@media (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
 }

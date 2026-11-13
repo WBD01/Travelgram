@@ -1,10 +1,24 @@
 footer{
     display: flex;
+    flex-wrap: wrap;
     padding-block: 24px;
-    gap: 24px;
-
+    gap: 8px 24px;
+    font: var(--text-small);
 }
 
 footer span:nth-child(1){
     margin-right: auto;
+}
+
+/* Mobile: centraliza os itens do rodapé */
+@media (max-width: 600px) {
+    footer {
+        justify-content: center;
+        text-align: center;
+    }
+
+    footer span:nth-child(1){
+        margin-right: 0;
+        width: 100%;
+    }
 }
